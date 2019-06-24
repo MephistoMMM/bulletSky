@@ -1,3 +1,4 @@
+# service
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -11,13 +12,8 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-node_modules/
-static/dist/
+# common
+.DS_Store
+TAGS
 *.swp
 .#*
-npm-debug.log
-.DS_Store
-.idea/
-*.map
-index_test.html
-TAGS
