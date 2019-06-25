@@ -11,7 +11,7 @@ platform:
   - x64
 
 cache:
-  - node_modules
+  - 'client\node_modules'
   - '%APPDATA%\npm-cache'
   - '%USERPROFILE%\.electron'
   - '%USERPROFILE%\AppData\Local\Yarn\cache'
@@ -26,6 +26,7 @@ install:
   - node --version
 
 build_script:
+  - cd client
   #- yarn test
   - yarn build
 
