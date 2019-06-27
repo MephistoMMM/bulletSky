@@ -17,7 +17,8 @@
             internal configurations, using the project structure, building your application,
             and so much more.
           </p>
-          <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br><br>
+          <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br>
+          <button @click="goToRouter('/example')">Example</button><br>
         </div>
         <div class="doc">
           <div class="title alt">Other Documentation</div>
@@ -38,6 +39,9 @@
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
+      },
+      goToRouter (link) {
+        window.location.hash = `#${link}`
       }
     }
   }

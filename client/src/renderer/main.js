@@ -9,6 +9,9 @@ if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
+// create store for PixiJS application
+window.PixiApp = {}
+
 /* eslint-disable no-new */
 new Vue({
   components: { App },

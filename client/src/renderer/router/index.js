@@ -11,6 +11,11 @@ export default new Router({
       component: require('@/components/LandingPage').default
     },
     {
+      path: '/example',
+      name: 'pixi-example-page',
+      component: require('@/components/PixiExamplePage').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
